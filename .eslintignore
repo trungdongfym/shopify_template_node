@@ -1,0 +1,5 @@
+.eslintrc.json
+/dist
+/node_modules
+/extensions
+vite.config.js
