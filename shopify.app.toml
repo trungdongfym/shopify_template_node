@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = "write_products"
+client_id = "c77a63b3c7f4a8bbf92df21878edc468"
+application_url = "https://dev-b2b-solution-embeded-21.dev-bsscommerce.com"
+embedded = true
+name = "donglt-customer-ui-extension"
+handle = "donglt-customer-ui-extension"
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "dev-dong-lt-store.myshopify.com"
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,read_themes,write_themes,read_customers,write_customers,read_draft_orders,write_draft_orders,write_script_tags,read_orders,write_orders,write_content,read_content,read_payment_terms,write_payment_terms,read_markets,write_markets,read_metaobjects,write_metaobjects,write_metaobject_definitions,read_metaobject_definitions,read_inventory,read_locations"
+
+[auth]
+redirect_urls = [
+  "https://dev-b2b-solution-embeded-21.dev-bsscommerce.com/auth/callback",
+  "https://dev-b2b-solution-embeded-21.dev-bsscommerce.com/auth/shopify/callback",
+  "https://dev-b2b-solution-embeded-21.dev-bsscommerce.com/api/auth/callback"
+]
+
+[pos]
+embedded = false

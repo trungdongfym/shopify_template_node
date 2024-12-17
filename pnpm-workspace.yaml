@@ -1,0 +1,5 @@
+
+packages:
+  - 'web/'
+  - 'web/frontend/'
+  - 'extensions/customer-account-ui/'

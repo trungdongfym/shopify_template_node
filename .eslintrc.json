@@ -1,0 +1,68 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:import/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "plugins": ["react", "react-hooks"],
+    "globals": {
+        "$crisp": "readonly",
+        "upvoty": "readonly"
+    },
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
+            "alias": {
+                "map": [["@", "./web/frontend"]],
+                "extensions": [".js", ".jsx", ".ts", ".tsx", "json"]
+            }
+        }
+    },
+    "rules": {
+        "no-console": 1,
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "react/prop-types": "off",
+        "require-yield": "off",
+        "import/no-unresolved": ["error"],
+        "node/no-missing-require": "off",
+        "node/no-extraneous-import": "off",
+        "react/no-unknown-property": "off",
+        "prefer-const": [
+            "error",
+            {
+                "destructuring": "all",
+                "ignoreReadBeforeAssign": false
+            }
+        ],
+        "import/export": 0
+    },
+    "ignorePatterns": [
+        "web/node_modules/*",
+        "web/frontend/node_modules/*",
+        "web/frontend/dist/*",
+        "web/frontend/build/*",
+        "web/frontend/build_bak/*"
+    ]
+}
