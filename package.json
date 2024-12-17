@@ -16,7 +16,7 @@
         "@shopify/app": "^3.0.0",
         "@shopify/cli": "^3.0.0",
         "@shopify/shopify_function": "0.1.0",
-        "javy": "0.1.1"
+        "javy": "0.1.2"
     },
     "devDependencies": {
         "@babel/eslint-parser": "^7.23.3",
