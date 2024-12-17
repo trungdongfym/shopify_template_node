@@ -15,7 +15,7 @@
     "dependencies": {
         "@shopify/app": "^3.0.0",
         "@shopify/cli": "^3.0.0",
-        "@shopify/shopify_function": "0.1.0",
+        "@shopify/shopify_function": "1.0.3",
         "javy": "0.1.1"
     },
     "devDependencies": {
