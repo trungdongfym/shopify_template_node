@@ -5,12 +5,12 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
-    "react": "^18.0.0",
+    "react": "^19.0.0",
     "@shopify/ui-extensions": "2024.10.x",
     "@shopify/ui-extensions-react": "2024.10.x"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
+    "@types/react": "^19.0.2",
     "react-reconciler": "0.29.0"
   }
 }
