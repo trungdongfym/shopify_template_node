@@ -19,7 +19,7 @@
         "javy": "0.1.1"
     },
     "devDependencies": {
-        "@babel/eslint-parser": "^7.23.3",
+        "@babel/eslint-parser": "^7.26.5",
         "@babel/preset-react": "^7.23.3",
         "eslint": "^8.55.0",
         "eslint-config-prettier": "^9.1.0",
